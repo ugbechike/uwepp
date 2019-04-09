@@ -1,0 +1,939 @@
+
+
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: #007b7e;
+    line-height: 6rem;
+    color: white;
+    opacity: 0.9;
+    padding: 0 20px;
+    font-size: 30px;
+    font-family: cursive
+}
+
+section {
+    width: 30%;
+    height: 90vh;
+    overflow-x: hidden;
+    background-color: #f3f3f3;
+    color: rgb(17, 14, 14); 
+    overflow-y: scroll
+}
+
+main {
+    width: -webkit-fill-available;
+    height: 90vh;
+    float: left;
+    overflow-y: hidden;
+    background: #c7c1c1;
+}
+
+aside {
+    width: -webkit-fill-available;
+    height: 90vh;
+    float: left;
+    overflow-y: hidden;
+}
+
+.overlay {
+    height: 100vh;
+    background-color: black;
+    width: 70%;
+    float: right;
+    position: static;
+    visibility: hidden;
+    
+}
+
+.card > div {
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    border: 1px solid darkgrey;
+    overflow: hidden;
+}
+
+
+.card {
+    padding: 7px;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid darkgrey;
+cursor: pointer;
+transition: box-shadow 100ms ease-in-out 0.1s;
+}
+
+
+.card:hover {
+    background-color: darkgrey;
+    color: white;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+.card > p {
+margin-left: 30px;
+line-height: 40px
+}
+
+.reveal {
+    width: 23vw;
+    margin-left: -17.4vw;
+    height: 90vh;
+    position: absolute;
+    padding: 10px;
+    animation-name: slide-right;
+    animation-duration: 0.7s;
+    border-right: 1px solid gray;
+    margin-top: -15px;
+    background: #c7c1c1;
+}
+
+.reveal > div > div {
+    width: 30%;
+    background: #1a888b;
+    border-radius: 5px;
+    padding-top: 5px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    height: 120px;
+}
+
+.reveal > div > div:hover {
+    box-shadow: none;
+}
+
+
+.reveal > div {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%
+}
+
+.back_collar_design,
+.collar_design{
+    position: sticky;
+    width: 23%;
+    margin-left: -0.9%;
+    z-index: 9;
+    margin-top: 5%;
+}
+
+
+main > center > div {
+    height: 70vh;
+    width: 81%;
+    background-color: transparent;
+    padding: 0;
+    /* border: 1px dotted darkgrey; */
+}
+
+aside > center > div {
+    height: 70vh;
+    width: 58%;
+    background-color: transparent;
+    padding: 0;
+    border: 1px dotted darkgrey;
+    margin-left: 280px;
+
+    /* height: 60vh;
+    width: 70%;
+    background-color: transparent;
+    padding: 0;
+    border: 1px dotted darkgrey;
+    padding-top: 3pc; */
+    /* margin: auto; */
+    
+}
+
+.testing_you {
+    margin-top: 15px;
+    background: #1a888b;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 3px 9px 2px rgb(49, 48, 48);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    1px 3px 9px 2px rgb(49, 48, 48);  /* Firefox 3.5 - 3.6 */
+    box-shadow:       1px 3px 9px 2px rgb(49, 48, 48);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    padding-top: 5px;
+}
+
+
+
+
+.collar_image{
+    width: 55%;
+}
+
+.collar_image_side1 {
+    width: 53%;
+    cursor: pointer;
+}
+
+/* WHITE COLLAR STYLE */
+.white_collar_image3{
+    width: 48%;
+    margin-left: -8px;
+    margin-top: -5.8px;
+}
+
+.white_collar_container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.collar_image3{
+    width: 55%;
+    margin-left: 3px;
+    margin-top: 6.8px;
+}
+
+.semi_header {
+    text-align: center;
+    height: auto;
+    background-color: #b43937;
+    color: white;
+    word-spacing: 50px;
+    padding: 10px;
+}
+
+.collar_image_side, .collar_image_side2, .back_image_side{
+    width: 100%;
+    cursor: pointer;
+}
+
+/* .back_image_side{
+    width: 40%;
+    cursor: pointer;
+    height: 70px;
+    cursor: pointer;
+    box-shadow: 2px 5px 3px;
+} */
+
+/* .collar_image_side:hover, 
+.collar_image_side2:hover, 
+.ankara-icon:hover,
+.collar_image_side1:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+} */
+
+.back_image_side:hover{
+    box-shadow: 2px 2px 1px;
+}
+
+.collar_container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    height: 70px;
+}
+
+.side_ankara {
+    background: url('../assets/ankara1.PNG') !important;
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+
+.side_white {
+    background: url('../assets/white-mat.jpg') !important;
+    background-size: cover;
+}
+
+.side_black {
+    background: url('../assets/wood.png') !important;
+    background-size: cover;
+}
+
+
+.collar_container > div {
+width: 90%;
+background: #1a888b;
+    border-radius: 5px;
+    padding-top: 5px;
+    margin-right: 10px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+
+.ankara-icon {
+    width: 65%;
+    height: 50px;
+    cursor: pointer;
+}
+
+.collar-display, .collar-displayW {
+    width: 51%
+}
+
+.shirt-side{
+    width: 85%;
+    cursor: pointer;
+    height: 65px;
+    transition: box-shadow 100ms ease-in-out 0.1s;
+}
+
+.shirt_design{
+    /* position: relative; */
+    width: 44%;
+    margin-top: -5.9%
+}
+
+.back_shirt_design{
+    width: 44%;
+    margin-top: -6.5%;
+    z-index: 200;
+    position: sticky;
+}
+
+.shirt_image{
+    width: 63%;
+    margin-right: 6px;
+    margin-top: 1px
+}
+
+/* WHITE SHIRT DEMO */
+.white_shirt_image{
+    width: 56%;
+    margin-left: 1px;
+    position: relative;
+    bottom: 45px;
+    right: 50px;
+}
+
+.shirt_image1{
+    width: 64%;
+    margin-left: 2px;
+}
+
+.back_shirt_image{
+    width: 64%;
+    margin-left: -5px;
+    margin-top: -4px;
+}
+
+.b_shirt_image1{
+    width: 61%;
+    margin-left: -5px;
+}
+
+.shirt-container{
+    display: grid;
+    grid-template-columns: auto auto auto
+}
+
+.shirt-container>div {
+        width: 100px;
+        height: 119px;
+        padding-top: 12px;
+        cursor: pointer;
+        border-radius: 5px;
+        background: #1a888b;
+}
+
+.back-shirt-container{
+    display: grid;
+    grid-template-columns: auto auto auto
+}
+
+.back-shirt-container>div {
+        /* width: 100px; */
+        border: 1px solid;
+        height: 119px;
+        padding-top: 12px;
+        margin-right: 15px;
+        cursor: pointer;
+        border-radius: 5px;
+}
+
+.sleeves_design{
+    position: sticky;
+    margin-top: -43%;
+    margin-left: -1%;
+    width: 66%;
+}
+
+.sleeves_image{
+    width: 53.8%;
+    margin-top: 3px;
+}
+
+.sleeves_image1{
+    width: 53%;
+    margin-top: -2px;
+    margin-right: 0px;
+}
+
+.white_sleeves_image{
+    width: 71.5%;
+    position: relative;
+    bottom: 90px;
+    right: 10px;
+}
+
+/* WHITE SLEEVE STYLE DEMO */
+.white_sleeves_image{
+    width: 71.5%;
+    position: relative;
+    bottom: 90px;
+    right: 10px;
+}
+
+
+
+.back_sleeves_design{
+    position: sticky;
+    margin-top: -39%;
+    margin-left: -1%;
+    width: 60%;
+}
+
+.cuff_image1{
+    width: 14%;
+    margin-top: 80px;
+    /* margin-bottom: -8px */
+    position: relative;
+    left: 500px;
+}
+
+.cuff-side{
+    width: 100%;
+    cursor: pointer;
+    height: 70px;
+    transition: box-shadow 100ms ease-in-out 0.1s;
+
+}
+
+.cuff-container{
+    display: grid;
+    grid-template-columns: auto auto auto
+}
+
+
+/* .sleeves-side{
+    width: 100%;
+    cursor: pointer;
+    height: 70px;
+    transition: box-shadow 100ms ease-in-out 0.1s;
+}
+
+.sleeves-side:hover{
+    box-shadow: 2px 2px 1px;
+} */
+
+
+/* .shirt-side:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+} */
+
+
+.collarIcon{
+    width: 70%;
+    margin: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+
+}
+
+.details{
+    margin-top: 15px;
+}
+
+.shirtIcon{
+    height: 60px;
+    margin-left: 7px;
+}
+
+.toggle-btn-front{
+    /* margin-right: 435px; */
+    margin-right: 697px;
+    background-color: #b43937;
+    color: white;
+    border: none;
+    height: 7vh;
+    position: relative;
+    bottom: 65px;
+}
+
+.toggle-btn-front1{
+    margin-right: 638px;
+    background-color: #b43937;
+    color: white;
+    border: none;
+    height: 7vh;
+    position: relative;
+    bottom: 65px;
+}
+
+.toggle-btn-back1{
+    background-color: #b43937;
+    color: white;
+    border: none;
+    height: 7vh;
+    position: relative;
+    bottom: 65px;
+}
+
+.toggle-btn-back{
+    background-color: #b43937;
+    color: white;
+    border: none;
+    height: 7vh;
+    position: relative;
+    bottom: 65px;
+}
+
+
+strong {
+    font-family: cursive;
+}
+
+
+
+.tooltiptext  {
+    font-family: cursive;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    position: relative;
+    top: 1px;
+}
+
+.tooltiptext1 {
+    font-family: cursive;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    position: relative;
+    top: 72px;
+}
+
+.tooltiptext :hover {
+    cursor: pointer;
+    color: #f4993b;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.collar_image_side:hover .tooltiptext {
+    visibility: visible;
+}
+
+.revealBox {
+    margin: 5px;
+    width: 30%;
+    height: 90px;
+    display: flow-root;
+}
+
+.revealBox > div {
+    background-color: white;
+    width: 100%;
+    height: 80%
+}
+
+
+.revealer {
+    margin-left: -17.4vw;
+    padding: 10px;
+    top: 10%;
+    width: 23%;
+    height: 90vh;
+    position: absolute;
+    bottom: 15vh;
+    animation-name: slide-bottom;
+    animation-duration: 0.7s;
+    border-left: 1px solid gray;
+    background: #c7c1c1;
+}
+
+.revealer-back {
+    margin-left: -0.4vw;
+    padding: 10px;
+    top: 10.5%;
+    background-color: white;
+    width: 25%;
+    height: 90vh;
+    position: absolute;
+    bottom: 15vh;
+    animation-name: slide-bottom;
+    animation-duration: 0.7s;
+    border-left: 1px solid gray;
+    border: 1px solid grey;
+    background: #f3f3f3;
+}
+
+@media screen and (max-width: 500px) {
+
+    .shirt-side{
+        width: 50%;
+        cursor: pointer;
+        height: 55px;
+    }
+
+    .semi_header {
+        width: 100%;
+        position: fixed;
+        margin-top: 10vh;
+    }
+
+    .toggle-btn{
+        position: fixed;
+        top: 0%;
+    
+    }
+
+    .testing_you {
+        border: 1px solid !important;
+        /* margin-top: 62px; */
+    }
+
+    .toggle-btn-front1 {
+        margin-right: 45px;
+        background-color: #b43937;
+        color: white;
+        border: none;
+        height: 7vh;
+        position: relative;
+        top: 230px;
+    }
+
+    .toggle-btn-back1 {
+        background-color: #b43937;
+        color: white;
+        border: none;
+        height: 7vh;
+        float: right;
+        margin-right: 0 !important;
+        position: relative;
+        top: 230px;
+        left: 32px;
+    }
+
+    .toggle-btn-front {
+        margin-right: 120px;
+        background-color: #b43937;
+        color: white;
+        border: none;
+        height: 7vh;
+        position: relative;
+        top: 230px;
+    }
+
+    .toggle-btn-back {
+        background-color: #b43937;
+        color: white;
+        border: none;
+        height: 7vh;
+        float: right;
+        margin-right: -15px;
+        position: relative;
+        top: 230px;
+    }
+
+    .white_sleeves_image {
+        width: 87.5%;
+        position: relative;
+        bottom: 40px;
+        right: 4px;
+    }
+
+    .card {
+        width: 70px;
+        margin: auto;
+        padding-top: 17px;
+        display: block;
+        /* overflow: hidden; */
+    }
+
+    section > div {
+        display: flex;
+        width: 100%;    }
+
+    .card > p {
+        /* visibility: hidden;
+        display: none */
+        text-align: center;
+        font-size: 0.8em;
+        margin: 0;
+        margin-top: -10px
+    }
+
+    .card > div {
+        margin: auto;
+        height: 50px;
+        width: 50px;
+        overflow: hidden
+    }
+
+    .mobile-section{
+        display: inline-flex;
+        margin: auto;
+    }
+
+    section {
+        display: flex;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        height: 15vh;
+    }
+    header {
+        position: fixed;
+    }
+
+    aside > center > div {
+        height: 45vh;
+        width: 81%;
+        background-color: transparent;
+        padding: 0;
+        margin-top: 32% !important;
+        margin-left: 0 !important;
+        border: none;
+    
+        /* height: 60vh;
+        width: 70%;
+        background-color: transparent;
+        padding: 0;
+        border: 1px dotted darkgrey;
+        padding-top: 3pc; */
+        /* margin: auto; */
+        
+    }
+    
+
+    main > center > div {
+        padding-top: 7%;
+        margin-top: 32% !important;
+        height: 50vh;
+        width: 90%;
+    }
+
+    .collar_design {
+     width: 33%;
+     position: sticky;
+     margin-top: 3%;
+     margin-left: -2%;
+    }
+
+    .back_collar_design {
+        width: 33%;
+     position: sticky;
+     margin-top: 3%;
+     margin-left: -2%;
+     z-index: -4;
+    }
+    
+    .collar_image{
+        width: 55%;
+    }
+
+    .collar_image3{
+        width: 55%;
+        margin-left: 3px;
+        margin-top: 6.8px;
+    }
+
+    .white_collar_image3 {
+        width: 50%;
+        margin-left: 0px;
+        margin-top: -5.8px;
+    }
+
+    .collar_image_side, .collar_image_side2{
+        width: 65%;
+        cursor: pointer;
+        height: auto;
+    }
+
+    .collar_container, .shirt_container{
+        display: grid;
+        grid-template-columns: auto auto auto
+    }
+
+    .collar_container > div {
+        width: 83%
+    }
+
+    .shirt-container>div {
+        width: 60%;
+        border: 1px solid black;
+    }
+
+    
+    .collar_container > div > div {
+        width: 100%;
+    }
+
+    .ankara-icon {
+        width: 100%;
+        height: 70px
+    }
+
+    .shirt_design{
+        width: 76%;
+        margin-top: -7.9%;
+    }
+
+    .back_shirt_design {
+        width: 76%;
+        margin-top: -7.9%;
+    }
+    
+    .back_sleeves_design {
+        width: 84%;
+        position: sticky;
+        margin-top: -66%;
+        margin-left: -2%;
+    }
+
+   
+
+    .shirt_image{
+        width: 55%;
+    }
+
+    .shirt_image1{
+        width: 57%;
+    }
+
+
+    .shirt-container{
+        display: grid;
+        grid-template-columns: auto auto auto
+    }
+
+    .sleeves_design {
+        width: 73%;
+        position: sticky;
+        margin-top: -66%;
+        margin-left: -2%;
+    }
+
+    .sleeves_image{
+        width: 55.8%;
+    }
+
+    .sleeves_image1{
+        width: 70%;
+    }
+
+    .sleeves-side{
+        width: 70%;
+        outline: 1px solid;
+        height: 70px;
+        cursor: pointer;
+        box-shadow: 2px 5px 3px;
+    }
+    .sleeves-side:hover{
+        box-shadow: 2px 2px 1px;
+    }
+
+
+    .collarIcon{
+        width: 70%;
+        margin: 5px;
+        margin-top: 15px;
+        margin-left: 10px;
+
+    }
+
+    .details{
+        margin-top: 15px;
+    }
+
+    .shirtIcon{
+        height: 60px;
+        margin-left: 7px;
+    }
+
+    .reveal, .revealer {
+        height: auto;
+        max-height: 32vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: fixed;
+        bottom: 0vh;
+        width: 100%;
+        margin-left: 0;
+        z-index: 1;
+    }
+
+    .revealer-back {
+        height: auto;
+        max-height: 33vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: fixed;
+        bottom: 0vh;
+        width: 100%;
+        margin-left: 0;
+        z-index: 1;
+    }
+
+    .revealer {
+        top: inherit;
+    }
+
+    .revealer-back {
+        top: inherit;
+    }
+
+    .reveal > div {
+        margin-top: 2%
+    }
+}
+
+/*  Scrool bar styles */
+::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #555; 
+    border-radius: 3px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;     
+  }
+  
+
+ @-webkit-keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(-50px);
+              /* transform: translateX(0); */
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              /* transform: translateX(100px); */
+    }
+  }
+
+ @-webkit-keyframes slide-bottom{
+    0% {
+      -webkit-transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+      opacity: 1
+    }
+  }
+  
+
+@-webkit-keyframes shadow-drop-center {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
