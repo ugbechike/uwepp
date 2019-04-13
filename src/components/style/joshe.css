@@ -97,7 +97,8 @@ line-height: 40px
     -webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
     box-shadow: 0 10px 6px -6px #777;
-    height: 120px;
+    height: 65px;
+    cursor: pointer;
 }
 
 .reveal > div > div:hover {
@@ -106,20 +107,31 @@ line-height: 40px
 
 
 .reveal > div {
-    display: inline-flex;
+    display: flex;
     justify-content: space-around;
-    width: 100%
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-.back_collar_design,
+/* .back_collar_design,
 .collar_design{
     position: sticky;
     width: 23%;
     margin-left: -0.9%;
     z-index: 9;
     margin-top: 5%;
-}
+} */
 
+/* Testing */
+.back_collar_design, .collar_design {
+    position: -webkit-sticky;
+    position: sticky;
+    width: 25%;
+    margin-left: 2.1%;
+    z-index: 22;
+    margin-top: 5%;
+}
+/* Ends */
 
 main > center > div {
     height: 70vh;
@@ -228,7 +240,7 @@ aside > center > div {
 }
 
 .side_ankara {
-    background: url('../assets/ankara1.PNG') !important;
+    background: url('../assets/ankara.PNG') !important;
     background-repeat: no-repeat;
     background-position: cover;
 }
@@ -262,9 +274,17 @@ background: #1a888b;
     cursor: pointer;
 }
 
-.collar-display, .collar-displayW {
+/* .collar-display, .collar-displayW {
     width: 51%
+} */
+/* Testing  */
+.collar-display, .collar-displayW {
+    width: 51%;
+    position: relative;
+    top: 26px;
 }
+
+/* Ends */
 
 .shirt-side{
     width: 85%;
@@ -273,11 +293,20 @@ background: #1a888b;
     transition: box-shadow 100ms ease-in-out 0.1s;
 }
 
-.shirt_design{
-    /* position: relative; */
+/* .shirt_design{
+    position: relative;
     width: 44%;
     margin-top: -5.9%
+} */
+
+/* Testing */
+.shirt_design {
+    position: relative;
+    width: 46%;
+    margin-top: -5.9%;
+    z-index: 20;
 }
+/* Ends here */
 
 .back_shirt_design{
     width: 44%;
@@ -286,11 +315,23 @@ background: #1a888b;
     position: sticky;
 }
 
-.shirt_image{
+/* .shirt_image{
     width: 63%;
     margin-right: 6px;
     margin-top: 1px
+} */
+
+/* Testing */
+
+.shirt_image {
+    width: 86%;
+    margin-right: 0px;
+    margin-top: 3px;
+    position: relative;
+    top: -3px;
 }
+/* End */
+
 
 /* WHITE SHIRT DEMO */
 .white_shirt_image{
@@ -302,7 +343,7 @@ background: #1a888b;
 }
 
 .shirt_image1{
-    width: 64%;
+    width: 87%;
     margin-left: 2px;
 }
 
@@ -317,19 +358,38 @@ background: #1a888b;
     margin-left: -5px;
 }
 
-.shirt-container{
+/* .shirt-container{
     display: grid;
     grid-template-columns: auto auto auto
-}
+} */
 
-.shirt-container>div {
+/* Testing */
+.shirt-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* End */
+
+/* .shirt-container>div {
         width: 100px;
         height: 119px;
         padding-top: 12px;
         cursor: pointer;
         border-radius: 5px;
         background: #1a888b;
+} */
+
+/* Testing */
+.shirt-container>div {
+    width: 30%;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #1a888b;
+    margin-bottom: 60px;
 }
+/* End */
 
 .back-shirt-container{
     display: grid;
@@ -346,24 +406,41 @@ background: #1a888b;
         border-radius: 5px;
 }
 
-.sleeves_design{
+/* .sleeves_design{
     position: sticky;
     margin-top: -43%;
     margin-left: -1%;
     width: 66%;
+} */
+
+/* Testing */ 
+.sleeves_design {
+    position: -webkit-sticky;
+    position: sticky;
+    margin-top: -44%;
+    margin-left: 1%;
+    width: 74%;
 }
+/* Ends here */
 
 .sleeves_image{
     width: 53.8%;
     margin-top: 3px;
 }
 
-.sleeves_image1{
+/* .sleeves_image1{
     width: 53%;
     margin-top: -2px;
     margin-right: 0px;
-}
+} */
 
+/* Testing */ 
+.sleeves_image1 {
+    width: 54%;
+    margin-top: 134px;
+    margin-right: 9px;
+}
+/* Ends here */
 .white_sleeves_image{
     width: 71.5%;
     position: relative;
@@ -437,6 +514,7 @@ background: #1a888b;
 
 .details{
     margin-top: 15px;
+    font-size: 13px;
 }
 
 .shirtIcon{
@@ -490,30 +568,43 @@ strong {
 
 
 
-.tooltiptext  {
+/* .tooltiptext  {
     font-family: cursive;
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1; /* Grey text */
-    width: 100%; /* Full width */
+    background: rgb(0, 0, 0); Fallback color
+    background: rgba(0, 0, 0, 0.5); Black background with 0.5 opacity
+    color: #f1f1f1; Grey text
+    width: 100%; Full width
     position: relative;
     top: 1px;
+} */
+
+/* Testing  */
+.tooltiptext {
+    font-family: cursive;
+    color: #000000;
+    padding: 7px;
+    cursor: pointer;
 }
+/* Ends */
 
 .tooltiptext1 {
     font-family: cursive;
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1; /* Grey text */
-    width: 100%; /* Full width */
+    color: #000000;
     position: relative;
     top: 72px;
 }
 
-.tooltiptext :hover {
+
+/* Remember that you commented this out when you were testing the new material */
+/* .tooltiptext :hover {
     cursor: pointer;
     color: #f4993b;
-}
+} */
+/* End */
+
+
+
+
 /* Show the tooltip text when you mouse over the tooltip container */
 .collar_image_side:hover .tooltiptext {
     visibility: visible;
@@ -793,9 +884,17 @@ strong {
         width: 55%;
     }
 
-    .shirt_image1{
+    /* .shirt_image1{
         width: 57%;
+    } */
+
+    /* Testing  */
+    .shirt_image1 {
+        width: 87%;
+        margin-left: 0px;
     }
+    /* Ends here */
+    
 
 
     .shirt-container{

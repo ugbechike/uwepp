@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 import './joshe.css';
 import Collar from '../collar/collar';
-import Collar1 from '../assets/collarButton.png'
+// import Collar1 from '../assets/collarButton.png'
+import Collar1 from '../assets/testcollar.png'
 import DesignArea from '../designArea/designArea';
 import Shirt from '../shirt/shirt';
-import Shirt1 from '../assets/shirtYesBtn.png';
-// import Shirt1 from '../assets/body.png';
+// import Shirt1 from '../assets/shirtYesBtn.png';
+import Shirt1 from '../assets/gg.png';
 import Sleeves from '../sleeves/sleeves';
-import LongSleeve from '../assets/longSleeves.png';
-// import LongSleeve from '../assets/hand.png';
+// import LongSleeve from '../assets/longSleeves.png';
+import LongSleeve from '../assets/handemo.png';
 
 import CollarIcon from '../assets/collar-icon.png';
 import Shirts from '../assets/Short.png';
@@ -26,7 +27,8 @@ import BackLongSleeve from '../assets/backsleeve.png';
 import BackSleeves from '../sleeves/backSleeves';
 import CollarW from '../assets/whitecollar1.png';
 import WhiteCollar from '../collar/whiteCollar';
-import Shirt3 from '../assets/whiteshirt.png';
+// import Shirt3 from '../assets/whiteshirt.png';
+import Shirt3 from '../assets/ghanaShirt.png'
 import blackShirt3 from '../assets/blackShirt.png';
 import WhiteShirt from '../shirt/whiteShirt';
 import BlackSleeves from '../sleeves/blackSleeves';
@@ -564,9 +566,12 @@ export default class Joshe extends Component {
                                                         <div className='revealAll'>
                                                             <div className="side_ankara"  onClick={this.handleRevealCollar}>
                                                                 {/* <img className='collar_image_side' src={Collar1} alt='collar' /> */}
-                                                                <div className='tooltiptext1'>
+                                                                {/* <div className='tooltiptext1'>
                                                                     <p ><strong>Ankara <br />Collar</strong></p>
-                                                                </div>
+                                                                </div> */}
+                                                                <p>ankara material <br/>
+                                                                    price: #2000
+                                                                </p>
                                                             </div>
                                                             <div className="side_white" onClick={this.handleWhiteCollar}>
                                                                 {/* <img className='collar_image_side2' src={CollarW} alt='collar' /> */}
@@ -581,19 +586,19 @@ export default class Joshe extends Component {
                                                                 <div className="side_ankara" onClick={this.handleReavelShirt}>
                                                                     {/* <img className='shirt-side' src={Shirt1} alt='shirt' /> */}
                                                                     <div className='tooltiptext1'>
-                                                                    <p ><strong>Ankara <br />Material</strong></p>
+                                                                    <p ><strong>Ankara <br />Material #5000</strong></p>
                                                                     </div>
                                                                 </div>
                                                                 <div className="side_white" onClick={this.handleReavelWhiteShirt}>
                                                                     {/* <img className='shirt-side' src={Shirt3} alt='shirt' /> */}
                                                                     <div className='tooltiptext1'>
-                                                                    <p ><strong>White <br />Material</strong></p>
+                                                                    <p ><strong>White <br />Material #2400</strong></p>
                                                                     </div>
                                                                 </div>
                                                                 <div className="side_black" onClick={this.handleReavelBlackShirt}>
                                                                     {/* <img className='shirt-side' src={blackShirt3} alt='shirt' /> */}
                                                                     <div className='tooltiptext1'>
-                                                                    <p ><strong>Black <br />Material</strong></p>
+                                                                    <p ><strong>Black <br />Material #12000</strong></p>
                                                                     </div>
                                                                 </div>
                                                             </div> :
@@ -606,14 +611,14 @@ export default class Joshe extends Component {
                                                                         <p><strong>Ankara <br />Sleeves</strong></p>
                                                                         </div>
                                                                     </div>
-                                                                    <div className="side_white" style={{ marginLeft: '20px' }} onClick={this.handlReavelWhiteSleeves}>
+                                                                    <div className="side_white"  onClick={this.handlReavelWhiteSleeves}>
                                                                         {/* <img className='sleeves-side1' src={Long} alt='shirt' /> */}
                                                                         <div className='tooltiptext1'>
                                                                         <p><strong>White <br />Sleeves</strong></p>
                                                                         </div>
                                                                     </div>
 
-                                                                     <div className="side_black" style={{ marginLeft: '20px' }} onClick={this.handlReavelBlackSleeves}>
+                                                                     <div className="side_black" onClick={this.handlReavelBlackSleeves}>
                                                                         {/* <img className='sleeves-side1' src={Long} alt='shirt' /> */}
                                                                         <div className='tooltiptext1'>
                                                                         <p><strong>White <br />Sleeves</strong></p>

@@ -13,6 +13,7 @@ export default function Collar(props) {
             <div >
 
                   <img className='ankara-icon'  src={Collar1} alt='collar' />
+                 
                     <p className='tooltiptext'><strong>Button<br/> collar</strong></p>
             </div>
             </div>
