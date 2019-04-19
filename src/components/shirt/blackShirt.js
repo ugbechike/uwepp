@@ -1,6 +1,6 @@
 import React from 'react'
-import blackShirt3 from '../assets/blackShirt.png';
-import blackShirt4 from '../assets/blackShirtBtn.png'
+import blackShirt3 from '../assets/igboShirt.png';
+import blackShirt4 from '../assets/ghanaShirt.png'
 
 export default function BlackShirt(props) {
   return (

@@ -1,7 +1,11 @@
 import React from 'react'
-import Collar1 from '../assets/collarButton.png'
-import Collar2 from '../assets/collarPlain.png'
-import Collar3 from '../assets/collarRev.png'
+// import Collar1 from '../assets/collarButton.png'
+import Collar1 from '../assets/testcollar.png'
+import Collar2 from '../assets/igboCollar.png';
+// import Collar2 from '../assets/collarPlain.png'
+import Collar3 from '../assets/kanoCollar.png'
+
+// import Collar3 from '../assets/collarRev.png'
 // import BtnDown from '../assets/buttonDown.png'
 // import Club from '../assets/club.png'
 // import RevCollar from '../assets/revCollar.png';
@@ -9,7 +13,7 @@ import Collar3 from '../assets/collarRev.png'
 export default function Collar(props) {
   return (
     <div className='collar_container'>
-            <div onClick={() => props.changeCollar(<img className='collar_image' src={Collar1} alt='collar' />)}>
+            <div onClick={() => props.changeCollar(<img className='collar-display' src={Collar1} alt='collar' />)}>
             <div >
 
                   <img className='ankara-icon'  src={Collar1} alt='collar' />
@@ -17,11 +21,11 @@ export default function Collar(props) {
                     <p className='tooltiptext'><strong>Button<br/> collar</strong></p>
             </div>
             </div>
-            <div onClick={() => props.changeCollar(<img className='collar_image' src={Collar2} alt='collar' />)}>
+            <div onClick={() => props.changeCollar(<img className='collar-display' src={Collar2} alt='collar' />)}>
                   <img className='ankara-icon'  src={Collar2} alt='collar' />
                   <p className='tooltiptext'><strong>Plain <br/>collar</strong></p>
             </div>
-            <div onClick={() => props.changeCollar(<img className='collar_image3' src={Collar3} alt='collar' />)}>
+            <div onClick={() => props.changeCollar(<img className='collar-display' src={Collar3} alt='collar' />)}>
                   <img className='ankara-icon' src={Collar3} alt='collar' />
                   <p className='tooltiptext'><strong>Rev <br/>collar</strong></p>
             </div>

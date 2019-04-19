@@ -4,8 +4,8 @@ import Shirt3 from '../assets/ghanaShirt.png'
 // import Shirt4 from '../assets/whiteshiteBtn.png';
 import Shirt4 from '../assets/igboShirt.png'
 
-import whiteBackShirt1 from '../assets/whitebacknopleats.png';
-import whiteBackShirt2 from '../assets/whitebackpleats.png';
+import whiteBackShirt1 from '../assets/ghanaShirtBack.png';
+import whiteBackShirt2 from '../assets/ghanaShirtBack.png';
 
 export default function WhiteShirt(props) {
   return (

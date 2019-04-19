@@ -1,7 +1,7 @@
 import React from 'react';
-import whiteBackShirt1 from '../assets/whitebacknopleats.png'
-import whiteBackShirt2 from '../assets/whitebackpleats.png';
-import whiteBackShirt3 from '../assets/whitebackyespleats.png';
+import whiteBackShirt1 from '../assets/ggBackShirt.png'
+import whiteBackShirt2 from '../assets/ghanaShirtBack.png';
+import whiteBackShirt3 from '../assets/ghanaShirtBack.png';
 
 export default function WhiteBackShirt(props) {
     return (

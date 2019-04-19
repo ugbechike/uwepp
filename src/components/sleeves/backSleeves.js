@@ -1,5 +1,5 @@
 import React from 'react';
-import BackLongSleeve from '../assets/backsleeve.png';
+import BackLongSleeve from '../assets/igboSleeve.png';
 import Long from '../assets/Long.PNG'
 
 export default function BackSleeves(props) {

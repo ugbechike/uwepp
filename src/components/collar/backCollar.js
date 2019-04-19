@@ -1,6 +1,6 @@
 import React from 'react'
 import RevCollar from '../assets/revCollar.png';
-import Collar4 from '../assets/backcollar.png'
+import Collar4 from '../assets/dottedCollar.png'
 
 export default function BackCollar(props) {
   return (

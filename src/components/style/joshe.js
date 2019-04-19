@@ -15,30 +15,36 @@ import CollarIcon from '../assets/collar-icon.png';
 import Shirts from '../assets/Short.png';
 import Long from '../assets/Long.PNG';
 import Cuff from '../cuff/cuff';
-// import Cuffs from '../assets/cuff.PNG';
+import Cuffs from '../assets/igboCuff.png';
+import Cuff3 from '../assets/cuff.PNG'
 import AnkaraFabrics from '../assets/ankara1.PNG';
-import backCollar from '../assets/backcollar.png';
+// import backCollar from '../assets/backcollar.png';
 import BackDesignArea from '../designArea/backDesign';
 import BackCollar from '../collar/backCollar';
-import backShirt1 from '../assets/backinvertpleats.png';
-import whiteBackShirt1 from '../assets/whitebacknopleats.png';
+import backShirt1 from '../assets/dottedCollar.png';
+import whiteBackShirt1 from '../assets/ghanaShirtBack.png';
 import BackShirt from '../shirt/backShirt';
-import BackLongSleeve from '../assets/backsleeve.png';
+import BackLongSleeve from '../assets/igboSleeve.png';
 import BackSleeves from '../sleeves/backSleeves';
-import CollarW from '../assets/whitecollar1.png';
+// import CollarW from '../assets/whitecollar1.png';
+import CollarW from '../assets/igboCollar.png';
+
 import WhiteCollar from '../collar/whiteCollar';
 // import Shirt3 from '../assets/whiteshirt.png';
 import Shirt3 from '../assets/ghanaShirt.png'
-import blackShirt3 from '../assets/blackShirt.png';
+// import blackShirt3 from '../assets/blackShirt.png';
+import blackShirt3 from '../assets/igboShirt.png';
+
 import WhiteShirt from '../shirt/whiteShirt';
 import BlackSleeves from '../sleeves/blackSleeves';
 import BlackShirt from '../shirt/blackShirt';
 import WhiteSleeves from '../sleeves/whiteSleeves';
-import WhiteSleeve1 from '../assets/whitesleeve.png';
-import BlackSleeve from '../assets/blacklongSleeves.png';
+import WhiteSleeve1 from '../assets/kanoSleeve.png';
+import BlackSleeve from '../assets/ghanaSleeve.png';
 import PageLoader from '../Loader/Loader1';
 import ItemLoader from "../Loader/Loader3";
 import WhiteBackShirt from '../shirt/whiteBackShirt';
+import Toggle from '../assets/views.png'
 
 
 export default class Joshe extends Component {
@@ -57,14 +63,18 @@ export default class Joshe extends Component {
         shirtImg: <img className='shirt_image1' src={Shirt1} alt='shirt' />,
         // shirtImg: <img className='shirt_image1' src={Shirt1} alt='shirt' />,
         sleevesImg: <img className='sleeves_image1' src={LongSleeve} alt='sleeves' />,
-        backcollarImg: <img style={{ width: '55%' }} src={backCollar} alt='sleeves' />,
-        backshirtImg: <img className='shirt_image1' src={backShirt1} alt='shirt' />,
-        backsleevesImg: <img className='sleeves_image1' src={BackLongSleeve} alt='sleeves' />,
+        cuffImg: <img className='cuff_image1' src={Cuffs} alt="cuffs"/>,
+        // backcollarImg: <img style={{ width: '55%' }} src={backCollar} alt='sleeves' />,
+        backshirtImg: <img className='back_shirt_image1' src={backShirt1} alt='shirt' />,
+        backsleevesImg: <img className='back_sleeves_image1' src={BackLongSleeve} alt='sleeves' />,
         activeTab: '1',
         frontView: true,
         bacView: false,
         btn: true,
         AnkaraCollar: false,
+        AnkaraCuff: false,
+        WhiteCuff: false,
+        BlackCuff: false,
         backResult: true,
         witeCollar: false,
         resultCollar: false,
@@ -88,12 +98,21 @@ export default class Joshe extends Component {
     }
 
 
+    // //HANDLE CUFFS
+    changeCuff = (cuffImg) => {
+        this.setState({
+            cuffImg
+        })
+    }
+
+
+
     //HANDLE COLLAR CHANGE
     changeCollar = (collarImg) => {
         this.setState({
             collarImg,
             hideClothes: !this.state.hideClothes,
-            cuffImg: this.state.hideClothes
+            // cuffImg: this.state.hideClothes
         })
     }
 
@@ -150,7 +169,7 @@ export default class Joshe extends Component {
             backResult: true,
             AnkaraCollar: false,
             witeCollar: true,
-            collarImg: <img className="collar-displayW" src={CollarW} alt='' />
+            collarImg: <img className="collar-display" src={CollarW} alt='' />
         });
     }
 
@@ -161,6 +180,7 @@ export default class Joshe extends Component {
             AnkaraShirt: true,
             AnkaraCollar: false,
             witeCollar: false,
+            AnkaraCuff: false,
             shirtImg: <img className='shirt_image1' src={Shirt1} alt='shirt' />,
         })
     }
@@ -186,6 +206,7 @@ export default class Joshe extends Component {
             AnkaraShirt: false,
             AnkaraCollar: false,
             witeCollar: false,
+            AnkaraCuff: false,
             shirtImg: <img className='shirt_image1' src={Shirt3} alt='shirt' />,
         })
     }
@@ -200,6 +221,7 @@ export default class Joshe extends Component {
             AnkaraShirt: false,
             AnkaraCollar: false,
             witeCollar: false,
+            AnkaraCuff: false,
             shirtImg: <img className='shirt_image1' src={blackShirt3} alt='shirt' />,
         })
     }
@@ -215,6 +237,7 @@ export default class Joshe extends Component {
             witeCollar: false,
             ShirtWhite: false,
             ShirtBlack: false,
+            AnkaraCuff: false,
             sleevesImg: <img className='sleeves_image1' src={LongSleeve} alt='sleeves' />,
         })
     }
@@ -230,6 +253,7 @@ export default class Joshe extends Component {
             witeCollar: false,
             ShirtWhite: false,
             ShirtBlack: false,
+            AnkaraCuff: false,
             sleevesImg: <img className='sleeves_image1' src={WhiteSleeve1} alt='sleeves' />,
         })
     }
@@ -245,9 +269,61 @@ export default class Joshe extends Component {
             witeCollar: false,
             ShirtWhite: false,
             ShirtBlack: false,
+            AnkaraCuff: false,
             sleevesImg: <img className='sleeves_image1' src={BlackSleeve} alt='sleeves' />,
         })
     }
+
+    handlReavelCuffs = () => {
+        this.setState({
+            AnkaraCuff: true,
+            WhiteCuff: false,
+            BlackCuff: false,
+            resultCollar: true,
+            backResult: true,
+            AnkaraShirt: false,
+            AnkaraCollar: false,
+            witeCollar: false,
+            ShirtWhite: false,
+            ShirtBlack: false,
+            AnkaraSleeve: false,
+            SleeveBlack: false,
+            SleeveWhite: false,
+            cuffImg: <img className='cuff_image1' src={Cuffs} alt='sleeves' />,
+        })
+    }
+
+    // handlReavelWhiteCuffs = () => {
+    //     this.setState({
+    //         AnkaraCuff: false,
+    //         WhiteCuff: true,
+    //         BlackCuff: false,
+    //         resultCollar: true,
+    //         backResult: true,
+    //         AnkaraShirt: false,
+    //         AnkaraCollar: false,
+    //         witeCollar: false,
+    //         ShirtWhite: false,
+    //         ShirtBlack: false,
+    //         cuffsImg: <img className='sleeves_image1' src={Cuffs} alt='sleeves' />,
+    //     })
+    // }
+
+    // handlReavelBlackCuffs = () => {
+    //     this.setState({
+    //         AnkaraCuff: false,
+    //         WhiteCuff: false,
+    //         BlackCuff: true,
+    //         resultCollar: true,
+    //         backResult: true,
+    //         AnkaraShirt: false,
+    //         AnkaraCollar: false,
+    //         witeCollar: false,
+    //         ShirtWhite: false,
+    //         ShirtBlack: false,
+    //         cuffsImg: <img className='sleeves_image1' src={Cuffs} alt='sleeves' />,
+    //     })
+    // }
     //ENDS HERE
 
 
@@ -260,18 +336,7 @@ export default class Joshe extends Component {
         })
     }
 
-    // //HANDLE CUFFS
-    // changeCuff = (cuffImg) => {
-    //     this.setState({
-    //         cuffImg,
-    //         hideClothes: !this.state.hideClothes,
-    //         shirtImg: this.state.hideClothes,
-    //         sleevesImg: this.state.hideClothes,
-    //         collarImg: this.state.hideClothes,
-    //         revealCuff: false,
-    //     })
-    // }
-
+    
 
     //HANDLE COLLAR TOGGLE SIDEBAR
     handleCollarClose = () => {
@@ -309,7 +374,8 @@ export default class Joshe extends Component {
             revealSleeves: !this.state.revealSleeves,
             revealShirt: false,
             revealCollar: false,
-            resultCollar: false
+            resultCollar: false,
+            revealCuff: false
         })
     }
 
@@ -392,6 +458,9 @@ export default class Joshe extends Component {
             backShirtWhite,
             revealWhiteShirt,
             ShirtBlack,
+            AnkaraCuff,
+            WhiteCuff,
+            BlackCuff,
             AnkaraSleeve,
             SleeveBlack,
             SleeveWhite,
@@ -453,7 +522,7 @@ export default class Joshe extends Component {
                                     </div>
                                     <div className='card' onClick={this.handleDisplayCuff}>
                                         <div>
-                                            <img className='shirtIcon' src='' alt="" />
+                                            <img className='shirtIcon' src={Cuff3} alt="" />
                                         </div>
                                         <p className='details'> Cuffs </p>
                                     </div>
@@ -555,7 +624,12 @@ export default class Joshe extends Component {
                                                                         <WhiteSleeves changeSleeves={this.changeSleeves} /> :
 
                                                                         SleeveBlack ?
-                                                                        <BlackSleeves changeSleeves={this.changeSleeves} /> : null
+                                                                        <BlackSleeves changeSleeves={this.changeSleeves} /> : 
+                                                                        
+                                                                        AnkaraCuff ?
+                                                                        <Cuff changeCuff={this.changeCuff} /> :
+
+                                                                        null
                                             }
                                         </div> :
                                         (revealCollar || revealCuff || revealShirt || revealSleeves) ?
@@ -569,14 +643,16 @@ export default class Joshe extends Component {
                                                                 {/* <div className='tooltiptext1'>
                                                                     <p ><strong>Ankara <br />Collar</strong></p>
                                                                 </div> */}
+                                                                <div className='tooltiptext1'>
                                                                 <p>ankara material <br/>
                                                                     price: #2000
                                                                 </p>
+                                                                </div>
                                                             </div>
                                                             <div className="side_white" onClick={this.handleWhiteCollar}>
                                                                 {/* <img className='collar_image_side2' src={CollarW} alt='collar' /> */}
                                                                 <div className='tooltiptext1'>
-                                                                    <p ><strong>white <br />Collar</strong></p>
+                                                                    <p >white <br />Collar <br/> price: #2000</p>
                                                                 </div>
                                                             </div>
                                                             {/* <div>BLAC COLLAR WILL BE HERE</div> */}
@@ -625,7 +701,30 @@ export default class Joshe extends Component {
                                                                         </div>
                                                                     </div>
 
-                                                                </div> : null
+                                                                </div> : 
+                                                                revealCuff ?
+                                                                <div className='revealSleeve'>
+                                                                    <div className="side_ankara" onClick={this.handlReavelCuffs}>
+                                                                        {/* <img className='sleeves-side1' src={Long} alt='shirt' /> */}
+                                                                        <div className='tooltiptext1'>
+                                                                        <p><strong>Ankara <br />Cuffs</strong></p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className="side_white"  onClick={this.handlReavelWhiteCuffs}>
+                                                                        {/* <img className='sleeves-side1' src={Long} alt='shirt' /> */}
+                                                                        <div className='tooltiptext1'>
+                                                                        <p><strong>White <br />Sleeves</strong></p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                     <div className="side_black" onClick={this.handlReavelBlackCuffs}>
+                                                                        {/* <img className='sleeves-side1' src={Long} alt='shirt' /> */}
+                                                                        <div className='tooltiptext1'>
+                                                                        <p><strong>White <br />Sleeves</strong></p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>: null
 
                                                 }
                                             </div> : null
@@ -636,8 +735,13 @@ export default class Joshe extends Component {
                                 {
                                     btn &&
                                     <div className='toggle-btn'>
-                                        <button className='toggle-btn-front' onClick={this.toggleViewFront}>Front view</button>
-                                        <button className='toggle-btn-back' onClick={this.toggleViewBack}>Back view</button>
+                                        <button className='toggle-btn-front' onClick={this.toggleViewFront}><span class="tooltiptexter">Front View</span></button>
+                                        <button className='toggle-btn-back' onClick={this.toggleViewBack}><span class="tooltiptexter">Back View</span></button>
+                                        <div>
+                                        {/* <i class="fa fa-hand-o-right"></i> */}
+                                        <span className="change_view">Toggle View</span>
+                                            <img className='toggle_view' src={Toggle} alt="tip"/>
+                                        </div>
                                     </div>
 
                                 }
