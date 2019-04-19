@@ -21,7 +21,7 @@ import AnkaraFabrics from '../assets/ankara1.PNG';
 // import backCollar from '../assets/backcollar.png';
 import BackDesignArea from '../designArea/backDesign';
 import BackCollar from '../collar/backCollar';
-import backShirt1 from '../assets/dottedCollar.png';
+import backShirt1 from '../assets/dottedShirtBack.png';
 import whiteBackShirt1 from '../assets/ghanaShirtBack.png';
 import BackShirt from '../shirt/backShirt';
 import BackLongSleeve from '../assets/igboSleeve.png';
