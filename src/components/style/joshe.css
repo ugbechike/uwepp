@@ -481,8 +481,8 @@ background: #1a888b;
     /* width: 54%;
     margin-top: 134px;
     margin-right: 9px; */
-
-    width: 75%;
+/* NOTE THE ORIGINAL WIDTH IS 75% */
+    width: 75%;       
     margin-top: 16px;
     margin-right: 9px;
 }
@@ -1448,12 +1448,12 @@ strong {
     }
 
     .cuff_image1 {
-        width: 53.2%;
+        width: 57.2%;
         /* margin-top: 88px; */
         /* margin-bottom: -8px; */
         position: relative;
-        left: -2px;
-        bottom: 25.7em;
+        left: -6px;
+        bottom: 26.1em;
         z-index: 3;
     }
 
@@ -1461,5 +1461,15 @@ strong {
         width: 99%;
         margin-left: 2px;
         margin-top: 90px;
+    }
+
+    .sleeves_image1 {
+        /* width: 54%;
+        margin-top: 134px;
+        margin-right: 9px; */
+    /* NOTE THE ORIGINAL WIDTH IS 75% */
+        width: 80%;       
+        margin-top: 16px;
+        margin-right: 19px;
     }
   }
