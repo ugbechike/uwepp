@@ -124,7 +124,7 @@ line-height: 40px
 
 /* Testing */
 .back_collar_design, .collar_design {
-    top: 22px;
+    top: 28px;
     position: relative;
     width: 22%;
     margin-left: 2.1%;
@@ -334,6 +334,7 @@ background: #1a888b;
     width: 65%;
     margin-top: -5.9%;
     z-index: 20;
+    right: -17px
 }
 /* Ends here */
 
@@ -355,7 +356,7 @@ background: #1a888b;
 .shirt_image {
     width: 86%;
     margin-right: 0px;
-    margin-top: 3px;
+    margin-top: -1px;
     position: relative;
     top: -3px;
 }
@@ -363,6 +364,7 @@ background: #1a888b;
 
 
 /* WHITE SHIRT DEMO */
+
 .white_shirt_image{
     width: 56%;
     margin-left: 1px;
@@ -384,8 +386,21 @@ background: #1a888b;
 }
 
 .shirt_image1{
-    width: 87%;
-    margin-left: 2px;
+    /* width: 87%;
+    margin-left: 2px; */
+
+    width: 86%;
+    margin-right: 28px;
+    margin-top: -4px;
+    position: relative;
+    top: 10px;
+}
+
+.white_shirt_image1 {
+    width: 86%;
+    margin-left: 20px;
+    position: relative;
+    bottom: 1em;
 }
 
 .back_shirt_image{
@@ -394,11 +409,21 @@ background: #1a888b;
     margin-top: -4px;
 }
 
-.b_shirt_image1{
+/* .b_shirt_image1{
     width: 61%;
     margin-left: -5px;
+} */
+/* NEW UPDATE */
+.b_shirt_image {
+    width: 27vw;
+    margin-left: 0px;
+    margin-top: 92px;
+    position: relative;
+    top: 5px;
 }
 
+
+/* ENDS HERE */
 /* .shirt-container{
     display: grid;
     grid-template-columns: auto auto auto
@@ -456,11 +481,17 @@ background: #1a888b;
 
 /* Testing */ 
 .sleeves_design {
-    position: -webkit-sticky;
+    /* position: -webkit-sticky;
     position: sticky;
     margin-top: -44%;
     margin-left: 1%;
     width: 74%;
+    z-index: 10; */
+
+    position: sticky;
+    margin-top: -42.5%;
+    margin-left: 2%;
+    width: 72%;
     z-index: 10;
 }
 /* Ends here */
@@ -487,6 +518,14 @@ background: #1a888b;
     margin-right: 9px;
 }
 /* Ends here */
+
+/* NEW FOR WHITE SLEEVES */
+.sleeves_image2 {
+    width: 75%;
+    margin-top: 4px;
+    margin-right: -9px;
+}
+/* STOP HERE */
 .white_sleeves_image{
     width: 71.5%;
     position: relative;
@@ -519,6 +558,37 @@ background: #1a888b;
     left: 500px;
 } */
 
+/* White COllar */
+.white_collar-display {
+    width: 81%;
+    position: relative;
+    top: 12px;
+    left: -2px;
+}
+/* End */
+
+
+
+/* WHITE_CUFFS */
+.white_cuff_image {
+    width: 48% !important;
+    margin-top: 45px;
+    margin-bottom: -8px;
+    /* bottom: 28.7em; */
+    margin-left: 4px;
+}
+/* ENDS */
+
+/* NEW DESIGN FIR CUFFS */
+.cuff_design{
+    width: 94%;
+    position: sticky;
+    bottom: 183px;
+    /* right: 9em; */
+    margin-right: -6px;
+}
+/* ENDS HERE */
+
 /* Testing */
 .cuff_image1 {
     /* width: 40.2%;
@@ -529,14 +599,14 @@ background: #1a888b;
     bottom: 25.7em;
     z-index: 3; */
 
-    width: 55.2%;
+    width: 55.2% !important;
     /* margin-top: 60px; */
     /* margin-bottom: -8px; */
-    position: relative;
-    left: -2px;
+    /* position: relative;
+    left: -2px; */
     /* bottom: 28.7em; */
-    bottom: 400.7px;
-    z-index: 3;
+    /* bottom: 400.7px;
+    z-index: 3; */
 }
 /* Ends */
 .cuff-side{
@@ -651,22 +721,42 @@ background: #1a888b;
 }
 
 .toggle-btn-front1{
-    margin-right: 638px;
+    /* margin-right: 638px;
     background-color: #b43937;
     color: white;
     border: none;
     height: 7vh;
     position: relative;
-    bottom: 65px;
+    bottom: 65px; */
+
+    margin-right: 45px;
+    background-color: #007b7e;
+    color: white;
+    border: none;
+    height: 4vh;
+    position: relative;
+    bottom: -4px;
+    margin-left: 34px;
+    border-radius: 30px;
+    width: 3%;
 }
 
 .toggle-btn-back1{
-    background-color: #b43937;
+    /* background-color: #b43937;
     color: white;
     border: none;
     height: 7vh;
     position: relative;
-    bottom: 65px;
+    bottom: 65px; */
+
+    background-color: #ea9339;
+    color: white;
+    border: none;
+    height: 4vh;
+    position: relative;
+    bottom: -4px;
+    border-radius: 30px;
+    width: 3%;
 }
 
 /* .toggle-btn-back{
@@ -816,6 +906,21 @@ strong {
     position: relative;
         right: 84px;
 }
+
+
+@media screen and (max-width: 474px) {
+
+/* ANDROID SCREEN */
+
+.shirt_image1 {
+    width: 72vw !important;
+    margin-left: -76px !important;
+    margin-top: -55px !important;
+}
+}
+
+/* END ======================== */
+
 
 
 /* ===================== */
@@ -1384,23 +1489,29 @@ strong {
 
     .shirt_image {
         width: 35vw;
-        margin-left: -51px;
+        margin-left: -40px;
         margin-top: -46px;
     }
 
     .sleeves_design {
         position: -webkit-sticky;
         position: sticky;
-        margin-top: -44%;
-        margin-left: 1%;
-        width: 71%;
+        margin-top: -43%;
+        margin-left: 1.4%;
+        width: 70%;
     }
 
     .shirt_design {
-        position: relative;
+        /* position: relative;
         width: 45.5%;
         margin-top: -5.9%;
+        z-index: 20; */
+
+        position: relative;
+        width: 49.5%;
+        margin-top: -5.9%;
         z-index: 20;
+        top: -4px;
     }
 
     .shirt_image1 {
@@ -1468,8 +1579,33 @@ strong {
         margin-top: 134px;
         margin-right: 9px; */
     /* NOTE THE ORIGINAL WIDTH IS 75% */
-        width: 80%;       
+        width: 78%;       
         margin-top: 16px;
         margin-right: 19px;
+    }
+
+    .white_collar-display {
+        width: 81%;
+        position: relative;
+        top: -35px;
+        left: -5px;
+    }
+
+    .cuff_design {
+        width: 99%;
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: -210px;
+        /* right: 9em; */
+        margin-right: -6px;
+    }
+
+    .white_cuff_image {
+        width: 46% !important;
+        margin-top: 45px;
+        /* bottom: 28.7em; */
+        margin-left: -16px;
+        position: relative;
+        bottom: 25.8em;
     }
   }

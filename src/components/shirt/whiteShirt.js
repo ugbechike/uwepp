@@ -1,11 +1,11 @@
 import React from 'react'
 // import Shirt3 from '../assets/whiteshirt.png';
-import Shirt3 from '../assets/ghanaShirt.png'
+import Shirt3 from '../assets/whiteShirt.png'
 // import Shirt4 from '../assets/whiteshiteBtn.png';
-import Shirt4 from '../assets/igboShirt.png'
+import Shirt4 from '../assets/whiteShirt.png'
 
-import whiteBackShirt1 from '../assets/ghanaShirtBack.png';
-import whiteBackShirt2 from '../assets/ghanaShirtBack.png';
+import whiteBackShirt1 from '../assets/whiteBackShirt.png';
+import whiteBackShirt2 from '../assets/whiteBackShirt.png';
 
 export default function WhiteShirt(props) {
   return (
@@ -14,7 +14,7 @@ export default function WhiteShirt(props) {
             <img className='shirt-side' src={Shirt3} alt='shirt' />
             <p className='tooltiptext'><strong>Button <br/>placket</strong></p>
         </div> */}
-         <div onClick={() => props.changeShirt(<img className='shirt_image' src={Shirt3} alt='shirt' />, <img className='back_shirt_image'  src={whiteBackShirt1} alt='shirt' />)}>
+         <div onClick={() => props.changeShirt(<img className='shirt_image' src={Shirt3} alt='shirt' />, <img className='b_shirt_image'  src={whiteBackShirt1} alt='shirt' />)}>
                 <img className='shirt-side' src={Shirt3} alt='shirt' />
                 <p className='tooltiptext'><strong>Plain <br />placket</strong></p>
             </div>
@@ -24,7 +24,7 @@ export default function WhiteShirt(props) {
             <p className='tooltiptext'><strong>Button <br/>placket</strong></p>
         </div> */}
 
-        <div onClick={() => props.changeShirt(<img className='shirt_image' src={Shirt4} alt='shirt' />, <img className='back_shirt_image'  src={whiteBackShirt2} alt='shirt' />)}>
+        <div onClick={() => props.changeShirt(<img className='shirt_image' src={Shirt4} alt='shirt' />, <img className='b_shirt_image'  src={whiteBackShirt2} alt='shirt' />)}>
                 <img className='shirt-side' src={Shirt4} alt='shirt' />
                 <p className='tooltiptext'><strong>Plain <br />placket</strong></p>
             </div>

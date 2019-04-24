@@ -5,7 +5,7 @@ import backShirt3 from '../assets/igboShirtBack.png';
 
 export default function BackShirt(props) {
   return (
-    <div className="back-shirt-container">
+    <div className="shirt-container">
         <div className="shirt_cover_side" onClick={() => props.changeShirt(<img className='back_shirt_image1'  src={backShirt1} alt='shirt' />)}>
             <img className='shirt-side' src={backShirt1} alt='shirt' />
             <p>Inverted pleats</p>
