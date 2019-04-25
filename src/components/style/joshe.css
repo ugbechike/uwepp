@@ -571,21 +571,19 @@ background: #1a888b;
 
 /* WHITE_CUFFS */
 .white_cuff_image {
-    width: 48% !important;
+    width: 47% !important;
     margin-top: 45px;
-    margin-bottom: -8px;
-    /* bottom: 28.7em; */
-    margin-left: 4px;
+    margin-bottom: 0px;
+    margin-left: 2px;
 }
 /* ENDS */
 
 /* NEW DESIGN FIR CUFFS */
 .cuff_design{
-    width: 94%;
+    width: 97%;
     position: sticky;
-    bottom: 183px;
-    /* right: 9em; */
-    margin-right: -6px;
+    bottom: 171px;
+    margin-right: -7px;
 }
 /* ENDS HERE */
 
@@ -1009,15 +1007,123 @@ strong {
     
 }
 
+/*  Scrool bar styles */
+::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #555; 
+    border-radius: 3px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;     
+  }
+  
+
+ @-webkit-keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(-50px);
+              /* transform: translateX(0); */
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              /* transform: translateX(100px); */
+    }
+  }
+
+ @-webkit-keyframes slide-bottom{
+    0% {
+      -webkit-transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+      opacity: 1
+    }
+  }
+  
+
+@-webkit-keyframes shadow-drop-center {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+
+
+  
+
+
+
+  /* MEDIA QUERY HANDLE STARTS HERE */
+
+  
+
+  /* MEDIA MINIMUM SCREEN OF 1050PX */
+  @media (min-width: 1281px) {
+  
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
 
 
 
 
-/* IPHONE */
 
 
-
-@media screen and (max-width: 500px) {
+  
+  @media (max-width: 500px)  {
     .toggle_view {
         position: relative;
         bottom: -238px !important;
@@ -1075,20 +1181,19 @@ strong {
     
     }
 
-    .testing_you {
-        border: 1px solid !important;
-        /* margin-top: 62px; */
-    }
 
     .toggle-btn-front1 {
         margin-right: 45px;
-        background-color: #b43937;
+        background-color: #007b7e;
         color: white;
         border: none;
         height: 7vh;
         position: relative;
         top: 230px;
+        margin-left: 60px;
+        cursor: pointer;
     }
+    
 
     .toggle-btn-back1 {
         background-color: #b43937;
@@ -1100,16 +1205,18 @@ strong {
         position: relative;
         top: 230px;
         left: 32px;
+        cursor: pointer;
     }
 
     .toggle-btn-front {
         margin-right: 120px;
-        background-color: #b43937;
+        background-color: #007b7e;
         color: white;
         border: none;
         height: 7vh;
         position: relative;
         top: 230px;
+        cursor: pointer;
     }
 
     .toggle-btn-back {
@@ -1183,29 +1290,22 @@ strong {
         margin-left: 0 !important;
         border: none;
     
-        /* height: 60vh;
-        width: 70%;
-        background-color: transparent;
-        padding: 0;
-        border: 1px dotted darkgrey;
-        padding-top: 3pc; */
-        /* margin: auto; */
         
     }
     
 
     main > center > div {
         padding-top: 7%;
-        margin-top: 32% !important;
+        margin-top: 24% !important;
         height: 50vh;
         width: 90%;
     }
 
     .collar_design {
-     width: 33%;
-     position: sticky;
-     margin-top: 3%;
-     margin-left: -2%;
+        width: 33%;
+        position: sticky;
+        margin-top: 10px;
+        margin-left: -2%;
     }
 
     .back_collar_design {
@@ -1239,17 +1339,17 @@ strong {
     }
 
     .collar_container, .shirt_container{
-        display: grid;
-        grid-template-columns: auto auto auto
+            display: flex;
+            flex-wrap: wrap;
     }
 
     .collar_container > div {
-        width: 83%
+        width: 25%;
     }
 
     .shirt-container>div {
-        width: 60%;
-        border: 1px solid black;
+        width: 80%;
+        margin-bottom: 2em;
     }
 
     
@@ -1273,10 +1373,10 @@ strong {
     }
     
     .back_sleeves_design {
-        width: 84%;
+        width: 98%;
         position: sticky;
-        margin-top: -66%;
-        margin-left: -2%;
+        margin-top: -74%;
+        margin-left: -5%;
     }
 
    
@@ -1287,16 +1387,6 @@ strong {
         margin-top: -49px !important;
     }
 
-    /* .shirt_image1{
-        width: 57%;
-    } */
-
-    /* Testing  */
-    /* .shirt_image1 {
-        width: 87%;
-        margin-left: 0px;
-    } */
-    /* Ends here */
 
     .shirt_image1 {
         width: 70vw !important;
@@ -1304,6 +1394,11 @@ strong {
         margin-top: -49px !important;
     }
     
+    .back_shirt_image1 {
+        width: 100%;
+        margin-left: 2px;
+        margin-top: 45px;
+    }
 
 
     .shirt-container{
@@ -1314,8 +1409,8 @@ strong {
     .sleeves_design {
         width: 73%;
         position: sticky;
-        margin-top: -66%;
-        margin-left: -2%;
+        margin-top: -40%;
+        margin-left: -10%;
     }
 
     .sleeves_image{
@@ -1395,217 +1490,136 @@ strong {
     .reveal > div {
         margin-top: 2%
     }
-
-
-    .cuff_image1 {
-        width: 79% !important;
-        margin-top: 145px;
-        /* margin-bottom: -24px !important; */
-        position: relative !important;
-        left: -7px !important;
-        bottom: 24.7em !important;
-        z-index: 3;
-    }
-
-
-    .collar-display{
-        width: 92%;
-        position: relative;
-        top: 41px;
-        left: 1px;
-    }
-}
-
-/*  Scrool bar styles */
-::-webkit-scrollbar {
-    width: 1px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #555; 
-    border-radius: 3px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;     
-  }
-  
-
- @-webkit-keyframes slide-right {
-    0% {
-      -webkit-transform: translateX(-50px);
-              /* transform: translateX(0); */
-    }
-    100% {
-      -webkit-transform: translateX(0px);
-              /* transform: translateX(100px); */
-    }
-  }
-
- @-webkit-keyframes slide-bottom{
-    0% {
-      -webkit-transform: translateY(-50px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0px);
-      opacity: 1
-    }
-  }
-  
-
-@-webkit-keyframes shadow-drop-center {
-    0% {
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    }
-    100% {
-      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-    }
-  }
-
-
-  @media screen and (max-width: 1440px) {
-    .reveal {
-        width: 23vw;
-        margin-left: -17.4vw;
-        height: 90vh;
-        position: absolute;
-        padding: 10px;
-        -webkit-animation-name: slide-right;
-        animation-name: slide-right;
-        -webkit-animation-duration: 0.7s;
-        animation-duration: 0.7s;
-        border-right: 1px solid gray;
-        margin-top: -45px !important;
-        background: #c7c1c1;
-    }
-
-    .shirt_image {
-        width: 35vw;
-        margin-left: -40px;
-        margin-top: -46px;
-    }
-
-    .sleeves_design {
+    .cuff_design {
+        width: 96%;
         position: -webkit-sticky;
-        position: sticky;
-        margin-top: -43%;
-        margin-left: 1.4%;
-        width: 70%;
+        position: sticky !important;
     }
 
-    .shirt_design {
-        /* position: relative;
-        width: 45.5%;
-        margin-top: -5.9%;
-        z-index: 20; */
-
-        position: relative;
-        width: 49.5%;
-        margin-top: -5.9%;
-        z-index: 20;
-        top: -4px;
-    }
-
-    .shirt_image1 {
-        /* width: 85%;
-        margin-left: 2px; */
-
-        width: 35vw;
-    margin-left: -51px;
-    margin-top: -46px;
-    }
-/* 
     .cuff_image1 {
-        width: 38.2%;
-        margin-top: 69px;
-        position: relative;
-        left: 0px;
-        bottom: 23.7em;
+        width: 82% !important;
+        position: relative !important;
+        left: -31px !important;
+        bottom: 14.3em !important;
         z-index: 3;
-    } */
+    }
 
-    /* .cuff_image1 {
-        width: 88.2%;
-        margin-top: 69px;
-        margin-bottom: -8px;
-        position: relative;
-        left: -9px;
-        bottom: 18.7em;
-        z-index: 3;
-    } */
+    .white_cuff_image {
+        width: 68% !important;
+    position: relative !important;
+    left: -32px !important;
+    bottom: 15.3em !important;
+    z-index: 3;
+    }
 
 
-    .collar-display{
+    .collar-display {
         width: 92%;
         position: relative;
-        top: -1px;
-        left: 1px;
-    }
-
-    .collar_image {
-        width: 93%;
-    }
-
-    .collar_image3  {
-        width: 93%;
-    }
-
-    .cuff_image1 {
-        width: 57.2%;
-        /* margin-top: 88px; */
-        /* margin-bottom: -8px; */
-        position: relative;
-        left: -6px;
-        bottom: 26.1em;
-        z-index: 3;
-    }
-
-    .back_shirt_image1 {
-        width: 99%;
-        margin-left: 2px;
-        margin-top: 90px;
-    }
-
-    .sleeves_image1 {
-        /* width: 54%;
-        margin-top: 134px;
-        margin-right: 9px; */
-    /* NOTE THE ORIGINAL WIDTH IS 75% */
-        width: 78%;       
-        margin-top: 16px;
-        margin-right: 19px;
+        top: 1px;
+        left: -18px;
     }
 
     .white_collar-display {
-        width: 81%;
+        width: 89%;
         position: relative;
-        top: -35px;
-        left: -5px;
+        top: -13px;
+        left: -20px;
     }
+}  
 
+
+
+
+@media  (max-width: 1440px){
+    
     .cuff_design {
-        width: 99%;
+        width: 95%;
         position: -webkit-sticky;
         position: sticky;
-        bottom: -210px;
-        /* right: 9em; */
+        bottom: 139px !important;
         margin-right: -6px;
     }
 
     .white_cuff_image {
         width: 46% !important;
-        margin-top: 45px;
-        /* bottom: 28.7em; */
-        margin-left: -16px;
-        position: relative;
-        bottom: 25.8em;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        margin-left: 6px;
     }
-  }
+}
+
+@media  (max-width: 1024px){
+    
+    .cuff_design {
+        width: 98%;
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: 264px !important;
+        margin-right: -6px;
+    }
+
+    .white_cuff_image {
+        width: 46% !important;
+        margin-top: 0px;
+        margin-bottom: 2px;
+        margin-left: 1px;
+    }
+
+    .back_sleeves_design {
+        position: sticky;
+        margin-top: -42%;
+        margin-left: -2%;
+        width: 62%;
+    }
+
+    .collar-display, .collar-displayW {
+        width: 81%;
+        position: relative;
+        top: 17px;
+        left: 8px;
+    }
+
+    .white_collar-display {
+        width: 81%;
+        position: relative;
+        top: -1px;
+        left: -2px;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .white_collar-display {
+        width: 81%;
+        position: relative;
+        top: -19px;
+        left: -21px;
+    }
+
+    .cuff_image1 {
+        width: 79% !important;
+        position: relative !important;
+        left: -30px !important;
+        bottom: 0.3em !important;
+        z-index: 3;
+    }
+    .sleeves_image2 {
+        width: 70vw;
+        margin-top: -52px;
+        position: relative;
+        left: -14px;
+    }
+
+    .collar-display, .collar-displayW {
+        width: 81%;
+        position: relative;
+        top: -7px;
+        left: -18px;
+    }
+
+}
+
+
+
+  
